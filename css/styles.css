@@ -16,9 +16,15 @@ body, html {
 	padding: 8px;
 }
 .hdrnav {
+	display: flex;
 	align-self: flex-end;
 	margin-left:auto;
-	font-size: 12px;
+	transform: scale(0.9, 0.9);
+}
+.icons {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap:5vw;
 }
 .intro {
 	font-size: 12px;
@@ -82,12 +88,10 @@ body, html {
 
 .showcase2 .card {
 	background-color: #fff;
-	/* color: #500778; */
 	border-radius: 5px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 	padding: 8px;
 	width: 200px;
-	/* align-items: center; */
 	font-family: Arial;
 	font-weight: bold;
 	font-size: 15px;
@@ -123,7 +127,6 @@ h1 {
 }
 h2 {
 	text-align: center;
-	/* color: black; */
 	padding-right: 5%;
 	padding-top: 20px;
 }
@@ -144,9 +147,7 @@ nav {
 			color: #500778;
 			padding-left: 10px;
 			padding-right: 10px; }
-	nav a:hover { background-color: #500778;
-				  color: #D0D0CE
-}
+
 footer { bottom: 0px;
 			top: 5px;
 			 width: 100%;
@@ -176,7 +177,9 @@ footer { bottom: 0px;
 		text-align: center;
 		width: 80vw;
 	}
-	
+	.hdrnav {
+		justify-content: center;
+	}
 	.intro {
 		color: #500778;
 	}
