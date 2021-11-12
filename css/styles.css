@@ -131,6 +131,10 @@ button {
 	text-align: center;
 }
 a:hover {
+	transform: rotate(370deg) scale(110%);
+	transition-duration:150ms;
+}
+.showcase2 a:hover {
 	transform: rotate(5deg) scale(110%);
 	transition-duration:150ms;
 }
