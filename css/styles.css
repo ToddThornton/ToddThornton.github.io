@@ -1,5 +1,4 @@
 body, html { 
-	/* background: linear-gradient(0.25turn, white, #D0D0CE); */
 	font-family: Verdana, Arial, sans-serif;
 	height: 100%;
 	margin: 0px auto;
@@ -8,6 +7,7 @@ body, html {
 	max-width: 95%;
 }
 
+/* Header */
 .logo {
 	width: 200px;
 }
@@ -33,6 +33,7 @@ body, html {
 .intro {
 	font-size: 16px;
 	font-weight:bold;
+	font-style: italic;
 	color:#D0D0Ce;
 	margin-left: auto;
 	align-self: flex-start;
@@ -44,12 +45,36 @@ body, html {
 	display:flex;
 	padding: 10px;
 }
+
 /* Showcase */
+.projects-container {
+	background: linear-gradient(0.25turn, white, #D0D0CE);
+	border: 2px solid #500778;
+	margin-top: -2px;
+	display:block;
+	padding: 10px;
+	align-items:center;
+	justify-content: center;
+}
+table, th, td {
+	border: 1px solid #500778;
+	border-collapse: collapse;
+	font-size: .7rem;
+	padding: 8px;
+	vertical-align: top;
+}
+th {
+	background-color: #500778;
+	color: #D0D0CE;
+	font-size: larger;
+}
+tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
 .pic1 {
 	border-radius: 0px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 }
-
 .card {
 	background-color: #fff;
 	color: #500778;
@@ -71,25 +96,46 @@ body, html {
 	font-size: 15px;
 	text-align: justify;
 }
-  /* .card2 {
+  .card2 {
 	background-color: #fff;
 	color: #500778;
 	border-radius: 10px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
 	padding: 8px;
-	margin-left: auto;
-	width: 80%;
+	margin-top: 10px;
+	max-width: 100%;
 	font-size: 15px;
-	text-align: justify;
-  } */
+	text-align: left;
+  }
 .list {
 	text-align: left;
   }
 .showcase .card .h2 {
 	color: #500778;
 }
-/* Showcase2 */
+.form-control {
+	width:95%;
+	padding:8px;
+	margin-bottom: 10px;
+	border: 1px solid #500778;
+}
+.submit {
+	background-color: #D0D0CE;
+	width: 100%;
+	border: none;
+	border-radius: 0;
+	border-left: 4px solid #500778;
+	font-weight: bold;
+	color: #500778;
+	cursor: pointer;
+}
+form .submit-btn :hover {
+	background-color: #500778;
+	border-left: 4px solid #D0D0CE;
+	color: #D0D0CE;
+}
 
+/* Showcase2 */
 .showcase2 .card {
 	background-color: #fff;
 	border-radius: 5px;
@@ -104,7 +150,6 @@ body, html {
 .card_pic {
 	margin: 10px 10px;
 }
-
 .cardTitle {
 	font-size: 15px;
 	text-decoration: none;
@@ -138,7 +183,6 @@ a:hover {
 	transform: rotate(5deg) scale(110%);
 	transition-duration:150ms;
 }
-
 h1 { 
 	font-size: 25px;
 	font-family: Arial;
